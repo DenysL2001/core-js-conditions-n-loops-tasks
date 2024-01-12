@@ -267,7 +267,7 @@ function getBalanceIndex(/* arr */) {
  */
 function getSpiralMatrix(size) {
   if (typeof size !== 'number' || size <= 0 || !Number.isInteger(size)) {
-    console.log('Error');
+    throw new Error('Error');
   }
   const matrix = [];
   for (let i = 0; i < size; i += 1) {
